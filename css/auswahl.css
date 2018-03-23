@@ -1,0 +1,12 @@
+/* ====================================================================
+     * Copyright (C) 2017-2018 Hahnen Industries - All Rights Reserved
+     * 
+     * This file is part of GDT.
+     * Unauthorized copying of this file or the software, via any medium
+     * is strictly prohibited and can not be distributed without the express
+     * permission of Hahnen Industries representated by Tobias Hahnen
+     *
+     * Written by Tobias Hahnen <tobias.hahnen@stud.hn.de>, March 2018
+    ===================================================================== */
+
+@import url("standard.css");[class~=lbl--info],.form--div--gdtwahl,[class~=form--div--gdtwahl--top]{margin-top:1vw;}[class~=form--div--gdtwahl--top],[class~=lbl--info],.form--div--gdtwahl,[class~=btn--nav]{margin-left:1vw;}[class~=btn--nav],[class~=lbl--info]{margin-bottom:1vw;}span{opacity:0;}input:checked+span,input:hover+span{opacity:1;}input:checked+span,input:hover+span,span{-webkit-transition:opacity .55s ease-in-out;}#btn_abbrechen{cursor:alias;}input[type="radio"]{-webkit-transform:scale(1.25);}input:hover+span,input:checked+span,span{-moz-transition:opacity .55s ease-in-out;}input:checked+span,span,input:hover+span{transition:opacity .55s ease-in-out;}[class~=lbl--info]{font-size:larger;}[class~=lbl--form--input]{display:inline-block;}[class~=lbl--form--input]{width:8vw;}*{cursor:default;}input[type="radio"]{-ms-transform:scale(1.25);}input[type="radio"]{transform:scale(1.25);}[class~=lbl--form--input]{text-align:right;}[class~=lbl--form--input]{font-size:large;}span{font-family:"Roboto",sans-serif;}span{color:#bf4040;}

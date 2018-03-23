@@ -1,0 +1,29 @@
+GDT-Version: standard
+Gespielt am 24.03.2018 - 00:15 Uhr
+
+Proband: asdff
+Alter: 12
+Bildung: 13
+Geschlecht: male
+
+Runde Gewürfelt Erwartet
+1		3456		5
+2		3456		4
+3		3456		1
+4		3456		3
+5		3456		6
+6		3456		4
+7		3456		2
+8		3456		3
+9		3456		6
+10		3456		1
+11		3456		2
+12		3456		5
+13		3456		3
+14		3456		1
+15		3456		5
+16		3456		4
+17		3456		2
+18		3456		6
+
+Kontostand: 1600

@@ -1,0 +1,5 @@
+# robots.txt zum GDT-(Web)Projekt
+# URL: gdt.allgpsy.uni-due.de
+
+User-agent: *
+Disallow: /

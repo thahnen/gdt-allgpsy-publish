@@ -1,0 +1,12 @@
+/* ====================================================================
+     * Copyright (C) 2017-2018 Hahnen Industries - All Rights Reserved
+     * 
+     * This file is part of GDT.
+     * Unauthorized copying of this file or the software, via any medium
+     * is strictly prohibited and can not be distributed without the express
+     * permission of Hahnen Industries representated by Tobias Hahnen
+     *
+     * Written by Tobias Hahnen <tobias.hahnen@stud.hn.de>, March 2018
+    ===================================================================== */
+
+@import url("standard.css");a{cursor:alias;}p,h2{color:#3b4148;}ul,h2,.btn--nav{margin-left:1vw;}ul{margin-right:1vw;}ul{border-left-width:thin;}ul{border-bottom-width:thin;}ul{border-right-width:thin;}ul{border-top-width:thin;}*{cursor:default;}ul{border-left-style:solid;}ul{border-bottom-style:solid;}[class~=btn--nav]{margin-top:1vw;}ul{border-right-style:solid;}ul{border-top-style:solid;}ul{border-left-color:darkgray;}ul{border-bottom-color:darkgray;}ul{border-right-color:darkgray;}ul{border-top-color:darkgray;}ul{border-image:none;}[class~=btn--nav]{margin-bottom:1vw;}
