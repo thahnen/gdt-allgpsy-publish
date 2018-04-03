@@ -1,12 +1,238 @@
-/* ====================================================================
-     * Copyright (C) 2017-2018 Hahnen Industries - All Rights Reserved
-     * 
-     * This file is part of GDT.
-     * Unauthorized copying of this file or the software, via any medium
-     * is strictly prohibited and can not be distributed without the express
-     * permission of Hahnen Industries representated by Tobias Hahnen
-     *
-     * Written by Tobias Hahnen <tobias.hahnen@stud.hn.de>, March 2018
-    ===================================================================== */
+@import url("standard.css");
 
-@import url("standard.css");body{height: 100vh;width: 100vw;overflow: hidden;cursor: default;}#div_aussen_wrapper{width: 99vw;overflow: hidden;}.div--item{border: thin solid darkgray;background-color: rgb(223, 228, 242);}.div--reihe1{height: 40vh;display: flex;}.lbl--reihe1--ueberschrift{text-align: center;font-size: calc(2vw * 0.7);}#div_video_wrapper{float: left;width: 33vw;height: 100%;}#div_video{height: 36vh;width: 31vw;margin-left: calc(31vw / 50);margin-top: calc(36vh / 50);}#video{height: 24vh;width: 29vw;margin-left: 1vw;background-color: darkgray;}#div_gewinn_verlust_diagramm{float: right;width: 67vw;height: 100%;}#div_gewinn_verlust_wrapper{float: left;width: 40vw;height: 100%;}#div_gewinn_verlust{width: 38vw;height: 36vh;margin-left: calc(38vw / 50);margin-top: calc(36vh / 50);}.lbl--guthaben{margin-left: 10%;margin-right: 10%;background-color: darkgray;font-size: calc(2vw * 0.95);text-align: center;}#lbl_verlust{color: darkred;}#lbl_gewinn{color: green;}#div_diagramm_wrapper{float: right;width: 26vw;height: 100%;}#div_diagramm{width: 24vw;height: 36vh;margin-left: calc(24vw /50);margin-top: calc(36vh / 50);}#canvas_diagramm{width: 22vw;height: 24vh;margin-left: 1vw;background-color: darkgray;}.div--reihe2{height: 58vh;display: flex;}#div_auswahl_wuerfel_wrapper{float: left;width: 66vw;}#div_auswahl_wuerfel{height: 56vh;width: 64vw;margin-top: calc(56vh / 50);margin-left: calc(65vw / 100);}.lbl--wuerfel--info{float: right;width: 30%;text-align: center;font-size: calc(2vw * 0.7);}#lbl_wuerfel_werte{width: 30%;}#lbl_wuerfel_auswahl{width: 70%;}#div_wuerfel_wrapper{margin-bottom: 10px;float: left;width: calc(64vw);}.wuerfel_btn{border: none;background: transparent;}#wuerfel_btn_1, #wuerfel_btn_2, #wuerfel_btn_3, #wuerfel_btn_4, #wuerfel_btn_5, #wuerfel_btn_6, #wuerfel_btn_12, #wuerfel_btn_123, #wuerfel_btn_1234{margin-left: 5%;}#wuerfel_btn_34, #wuerfel_btn_56{margin-left: 16%;}#wuerfel_btn_456{margin-left: 33%;}#wuerfel_btn_2345, #wuerfel_btn_3456{margin-left: 8%;}.wuerfel_reihe_1, .wuerfel_reihe_2, .wuerfel_reihe_3, .wuerfel_reihe_4{height: calc(2vw * 0.85);background-color: white;}.wuerfel_reihe_1{width: calc(2vw * 0.85);}.wuerfel_reihe_2{width: calc(2vw * 0.85 * 2);}.wuerfel_reihe_3{width: calc(2vw * 0.85 * 3);}.wuerfel_reihe_4{width: calc(2vw * 0.85 * 4);}.lbl--gewinnsumme{float: right;width: 15%;height: calc(2vw * 0.85);margin-right: 5%;font-size: calc(2vw * 0.85);}#div_probandendaten_buttons{float: right;width: 33vw;}.div--wrapper--info{width: 32vw;margin-left: calc(32vw / 100);}.div--inner{width: 100%;height: 100%;}#div_probandendaten{height: 66%;margin-top: calc(66% / 50);}.lbl--probandendaten{margin-left: 10%;width: 80%;text-align: left;font-size: calc(2vw * 0.7);}#div_buttons{height: 30%;margin-top: calc(30% / 50);}.btn--nav{margin-top: 10%;font-size: calc(2vw * 0.8);}#btn_start_weiter{float: left;margin-left: 15%;}#btn_abbrechen{float: right;margin-right: 15%;cursor: alias;}
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    cursor: default;
+}
+
+#div_aussen_wrapper {
+    width: 99vw;
+    overflow: hidden;
+}
+
+.div--item {
+    border: thin solid darkgray;
+    background-color: rgb(223, 228, 242);
+}
+
+.div--reihe1 {
+    height: 40vh;
+    display: flex;
+}
+
+.lbl--reihe1--ueberschrift {
+    text-align: center;
+    font-size: calc(2vw * 0.7);
+}
+
+/* #region 1. Element: Video-Box */
+#div_video_wrapper {
+    float: left;
+    width: 33vw;
+    height: 100%;
+}
+
+#div_video {
+    height: 36vh;
+    width: 31vw;
+    margin-left: calc(31vw / 50);
+    margin-top: calc(36vh / 50);
+}
+
+#video {
+    height: 24vh;
+    width: 29vw;
+    margin-left: 1vw;
+    background-color: darkgray;
+}
+/* #endregion */
+
+/* #region 2. Element: Gewinn/ Verlust & Diagramm [GENERELL] */
+#div_gewinn_verlust_diagramm {
+    float: right;
+    width: 67vw;
+    height: 100%;
+}
+/* #endregion */
+
+/* #region i) Gewinn/ Verlust */
+#div_gewinn_verlust_wrapper {
+    float: left;
+    width: 40vw;
+    height: 100%;
+}
+
+#div_gewinn_verlust {
+    width: 38vw;
+    height: 36vh;
+    margin-left: calc(38vw / 50);
+    margin-top: calc(36vh / 50);
+}
+
+.lbl--guthaben {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: darkgray;
+    font-size: calc(2vw * 0.95);
+    text-align: center;
+}
+
+#lbl_verlust { color: darkred; }
+#lbl_gewinn { color: green; }
+/* #endregion */
+
+/* #region ii) Diagramm */
+#div_diagramm_wrapper {
+    float: right;
+    width: 26vw;
+    height: 100%;
+}
+
+#div_diagramm {
+    width: 24vw;
+    height: 36vh;
+    margin-left: calc(24vw /50);
+    margin-top: calc(36vh / 50);
+}
+
+#canvas_diagramm {
+    width: 22vw;
+    height: 24vh;
+    margin-left: 1vw;
+    background-color: darkgray;
+}
+/* #endregion */
+
+.div--reihe2 {
+    height: 58vh;
+    display: flex;
+}
+
+/* #region 1.Element: Auswahl Würfel */
+#div_auswahl_wuerfel_wrapper {
+    float: left;
+    width: 66vw;
+}
+
+#div_auswahl_wuerfel {
+    height: 56vh;
+    width: 64vw;
+    margin-top: calc(56vh / 50);
+    margin-left: calc(65vw / 100);
+}
+
+.lbl--wuerfel--info {
+    float: right;
+    width: 30%;
+    text-align: center;
+    font-size: calc(2vw * 0.7);
+}
+
+#lbl_wuerfel_werte { width: 30%; }
+
+#lbl_wuerfel_auswahl { width: 70%; }
+
+#div_wuerfel_wrapper {
+    margin-bottom: 10px;
+    float: left;
+    width: calc(64vw);
+}
+
+.wuerfel_btn {
+    border: none;
+    background: transparent;
+}
+
+#wuerfel_btn_1, #wuerfel_btn_2, #wuerfel_btn_3, #wuerfel_btn_4, #wuerfel_btn_5, #wuerfel_btn_6, #wuerfel_btn_12, #wuerfel_btn_123, #wuerfel_btn_1234 {
+    margin-left: 5%;
+}
+
+#wuerfel_btn_34, #wuerfel_btn_56 {
+    margin-left: 16%;
+}
+
+#wuerfel_btn_456 {
+    margin-left: 33%;
+}
+
+#wuerfel_btn_2345, #wuerfel_btn_3456 {
+    margin-left: 8%;
+}
+
+.wuerfel_reihe_1, .wuerfel_reihe_2, .wuerfel_reihe_3, .wuerfel_reihe_4 {
+    height: calc(2vw * 0.85);
+    background-color: white;
+}
+
+.wuerfel_reihe_1 { width: calc(2vw * 0.85); }
+
+.wuerfel_reihe_2 { width: calc(2vw * 0.85 * 2); }
+
+.wuerfel_reihe_3 { width: calc(2vw * 0.85 * 3); }
+
+.wuerfel_reihe_4 { width: calc(2vw * 0.85 * 4); }
+
+.lbl--gewinnsumme {
+    float: right;
+    width: 15%;
+    height: calc(2vw * 0.85);
+    margin-right: 5%;
+    font-size: calc(2vw * 0.85);
+}
+/* #endregion */
+
+/* #region 2.Element: Probandendaten & Navigationsknöpfe [GENERELL] */
+#div_probandendaten_buttons {
+    float: right;
+    width: 33vw;
+}
+
+.div--wrapper--info {
+    width: 32vw;
+    margin-left: calc(32vw / 100);
+}
+
+.div--inner {
+    width: 100%;
+    height: 100%;
+}
+/* #endregion */
+
+/* #region i) Probandendaten */
+#div_probandendaten {
+    height: 66%;
+    margin-top: calc(66% / 50);
+}
+
+.lbl--probandendaten {
+    margin-left: 10%;
+    width: 80%;
+    text-align: left;
+    font-size: calc(2vw * 0.7);
+}
+/* #endregion */
+
+/* #region ii) Navigationsknöpfe*/
+#div_buttons {
+    height: 30%;
+    margin-top: calc(30% / 50);
+}
+
+.btn--nav {
+    margin-top: 10%;
+    font-size: calc(2vw * 0.8);
+}
+
+#btn_start_weiter {
+    float: left;
+    margin-left: 15%;
+}
+
+#btn_abbrechen {
+    float: right;
+    margin-right: 15%;
+    cursor: alias;
+}
+/* #endregion */

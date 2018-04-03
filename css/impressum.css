@@ -1,0 +1,13 @@
+@import url("standard.css");
+
+* { cursor: default; }
+
+a { cursor: alias; }
+
+h1, h2 { margin-left: calc(1vw); }
+
+p {
+    margin-left: calc(1vw);
+    font-size: larger;
+    font-weight: bold;
+}

@@ -1,12 +1,120 @@
-/* ====================================================================
-     * Copyright (C) 2017-2018 Hahnen Industries - All Rights Reserved
-     * 
-     * This file is part of GDT.
-     * Unauthorized copying of this file or the software, via any medium
-     * is strictly prohibited and can not be distributed without the express
-     * permission of Hahnen Industries representated by Tobias Hahnen
-     *
-     * Written by Tobias Hahnen <tobias.hahnen@stud.hn.de>, March 2018
-    ===================================================================== */
+$(function() {
+    var rundenanzahl = 18;
+    var aktuelle_runde = 1;
 
-var _0x857e=['indexOf','Fehler\x20mit\x20Auswertung\x20Würfel!','disabled','.wuerfel_btn','css','not-allowed','#btn_abbrechen','click','Wollen\x20sie\x20die\x20Seite\x20wirklich\x20verlassen\x20und\x20GDT\x20damit\x20abbrechen?','location','#btn_start_weiter','val','Start','Weiter','getElementById','innerHTML','lbl_gewinn','lbl_verlust','Beenden','&alter=','&schuljahre=','&geschlecht=','&anzahl_ergebnisse=','&zuerwartende_werte=','length','&ergebnisse=','lbl_runde','Runde\x20','prop','pointer','attr','replace','wuerfel_btn_'];(function(_0xbed239,_0x1b9ad6){var _0x2f0bb7=function(_0x5b3d45){while(--_0x5b3d45){_0xbed239['push'](_0xbed239['shift']());}};_0x2f0bb7(++_0x1b9ad6);}(_0x857e,0x10a));var _0x5dc7=function(_0x590970,_0x4ff609){_0x590970=_0x590970-0x0;var _0x182c80=_0x857e[_0x590970];return _0x182c80;};$(function(){var _0xd008f9=0x12;var _0x54ffa7=0x1;var _0x30c528=[0x5,0x4,0x1,0x3,0x6,0x4,0x2,0x3,0x6,0x1,0x2,0x5,0x3,0x1,0x5,0x4,0x2,0x6];var _0x26000b=0x3e8;var _0x1b6d9c=[];var _0x1ea540;$('.wuerfel_btn')['prop'](_0x5dc7('0x0'),!![]);$(_0x5dc7('0x1'))[_0x5dc7('0x2')]({'cursor':_0x5dc7('0x3')});$(_0x5dc7('0x4'))[_0x5dc7('0x5')](function(){if(confirm(_0x5dc7('0x6'))){window[_0x5dc7('0x7')]='/abbruch.php';}});$(_0x5dc7('0x8'))[_0x5dc7('0x5')](function(){if($(this)[_0x5dc7('0x9')]()==_0x5dc7('0xa')){$(this)[_0x5dc7('0x9')](_0x5dc7('0xb'));if(_0x26000b>=0x0){document[_0x5dc7('0xc')]('lbl_verlust')[_0x5dc7('0xd')]='-\x20'+'0'+'\x20€';document[_0x5dc7('0xc')](_0x5dc7('0xe'))[_0x5dc7('0xd')]='+\x20'+_0x26000b+'\x20€';}else{document['getElementById'](_0x5dc7('0xf'))[_0x5dc7('0xd')]=_0x26000b+'\x20€';document['getElementById'](_0x5dc7('0xe'))[_0x5dc7('0xd')]='+\x20'+'0'+'\x20€';}}else if($(this)[_0x5dc7('0x9')]()==_0x5dc7('0x10')){var _0x5cc089='/ende.php?gdt_version=standard&name_vpnum='+name_vpnum+_0x5dc7('0x11')+alter+_0x5dc7('0x12')+schuljahre+_0x5dc7('0x13')+geschlecht+_0x5dc7('0x14')+_0xd008f9;var _0x1c0cac=_0x5dc7('0x15');for(var _0x3b81e0=0x0;_0x3b81e0<_0x30c528[_0x5dc7('0x16')];_0x3b81e0++){if(_0x3b81e0!=_0x30c528[_0x5dc7('0x16')]-0x1){_0x1c0cac+=_0x30c528[_0x3b81e0]+'-';}else{_0x1c0cac+=_0x30c528[_0x3b81e0];}}_0x5cc089+=_0x1c0cac;var _0x2a555d=_0x5dc7('0x17');for(var _0x3b81e0=0x0;_0x3b81e0<_0x1b6d9c[_0x5dc7('0x16')];_0x3b81e0++){if(_0x3b81e0!=_0x1b6d9c[_0x5dc7('0x16')]-0x1){_0x2a555d+=_0x1b6d9c[_0x3b81e0]+'-';}else{_0x2a555d+=_0x1b6d9c[_0x3b81e0];}}_0x5cc089+=_0x2a555d;_0x5cc089+='&guthaben='+_0x26000b;window[_0x5dc7('0x7')]=_0x5cc089;}if(_0x54ffa7==_0xd008f9){$(this)[_0x5dc7('0x9')]('Beenden');}document[_0x5dc7('0xc')](_0x5dc7('0x18'))['innerHTML']=_0x5dc7('0x19')+_0x54ffa7+'\x20von\x20'+_0xd008f9;_0x54ffa7++;$(_0x5dc7('0x1'))[_0x5dc7('0x1a')](_0x5dc7('0x0'),![]);$(_0x5dc7('0x1'))['css']({'cursor':_0x5dc7('0x1b')});$(this)[_0x5dc7('0x1a')](_0x5dc7('0x0'),!![]);$(this)[_0x5dc7('0x2')]({'cursor':_0x5dc7('0x3')});});$('.wuerfel_btn')[_0x5dc7('0x5')](function(){_0x1ea540=$(this)[_0x5dc7('0x1c')]('id')[_0x5dc7('0x1d')](_0x5dc7('0x1e'),'');_0x1b6d9c['push'](_0x1ea540);$(_0x5dc7('0x1'))[_0x5dc7('0x1a')](_0x5dc7('0x0'),!![]);$(_0x5dc7('0x1'))['css']({'cursor':_0x5dc7('0x3')});var _0x7e5408=_0x30c528[_0x54ffa7-0x2];if(_0x1ea540['length']==0x4){if(_0x1ea540['indexOf'](_0x7e5408)>-0x1){_0x26000b+=0x64;}else{_0x26000b-=0x64;}}else if(_0x1ea540[_0x5dc7('0x16')]==0x3){if(_0x1ea540[_0x5dc7('0x1f')](_0x7e5408)>-0x1){_0x26000b+=0xc8;}else{_0x26000b-=0xc8;}}else if(_0x1ea540[_0x5dc7('0x16')]==0x2){if(_0x1ea540[_0x5dc7('0x1f')](_0x7e5408)>-0x1){_0x26000b+=0x1f4;}else{_0x26000b-=0x1f4;}}else if(_0x1ea540[_0x5dc7('0x16')]==0x1){if(_0x1ea540[_0x5dc7('0x1f')](_0x7e5408)>-0x1){_0x26000b+=0x3e8;}else{_0x26000b-=0x3e8;}}else{alert(_0x5dc7('0x20'));}if(_0x26000b>=0x0){document[_0x5dc7('0xc')](_0x5dc7('0xf'))[_0x5dc7('0xd')]='-\x20'+'0'+'\x20€';document[_0x5dc7('0xc')](_0x5dc7('0xe'))[_0x5dc7('0xd')]='+\x20'+_0x26000b+'\x20€';}else{document[_0x5dc7('0xc')](_0x5dc7('0xf'))[_0x5dc7('0xd')]=_0x26000b+'\x20€';document[_0x5dc7('0xc')]('lbl_gewinn')[_0x5dc7('0xd')]='+\x20'+'0'+'\x20€';}$(_0x5dc7('0x8'))[_0x5dc7('0x1a')](_0x5dc7('0x0'),![]);$(_0x5dc7('0x8'))[_0x5dc7('0x2')]({'cursor':_0x5dc7('0x1b')});});});
+    var werte = [5, 4, 1, 3, 6, 4, 2, 3, 6, 1, 2, 5, 3, 1, 5, 4, 2, 6];
+
+    var guthaben = 1000;
+    var ergebnisse = [];
+    var wuerfel_auswahl;
+
+    var popup_inhalt;
+
+    $(".wuerfel_btn").prop("disabled", true);
+    $(".wuerfel_btn").css({"cursor": "not-allowed"});
+
+    $("#btn_abbrechen").click(function() { if (confirm("Wollen sie die Seite wirklich verlassen und GDT damit abbrechen?")) { window.location = "/abbruch.php"; } });
+
+    $("#btn_start_weiter").click(function() {
+        if ($(this).val() == "Start") {
+            $(this).val("Weiter");
+
+            if (guthaben >= 0) {
+                document.getElementById("lbl_verlust").innerHTML = "- " + "0" + " €";
+                document.getElementById("lbl_gewinn").innerHTML = "+ " + guthaben + " €";
+            } else {
+                document.getElementById("lbl_verlust").innerHTML = guthaben + " €";
+                document.getElementById("lbl_gewinn").innerHTML = "+ " + "0" + " €";
+            }
+            
+        } else if ($(this).val() == "Beenden") {
+            var ganze_url = "/ende.php?gdt_version=standard&name_vpnum=" + name_vpnum + "&alter=" + alter + "&schuljahre=" + schuljahre + "&geschlecht=" + geschlecht + "&anzahl_ergebnisse=" + rundenanzahl;
+
+            var erwartet_url = "&zuerwartende_werte=";
+            for (var i=0; i < werte.length; i++) {
+                if (i != werte.length-1) { erwartet_url += werte[i] + "-"; }
+                else { erwartet_url += werte[i]; }
+            }
+            ganze_url += erwartet_url;
+
+            var ergebnisse_url = "&ergebnisse=";
+            for (var i=0; i < ergebnisse.length; i++) {
+                if (i != ergebnisse.length-1) { ergebnisse_url += ergebnisse[i] + "-"; }
+                else { ergebnisse_url += ergebnisse[i]; }
+            }
+            ganze_url += ergebnisse_url;
+            ganze_url += "&guthaben=" + guthaben;
+
+            window.location = ganze_url;
+        }
+
+        if (aktuelle_runde == rundenanzahl) { $(this).val("Beenden"); }
+        
+        document.getElementById("lbl_runde").innerHTML = "Runde " + aktuelle_runde + " von " + rundenanzahl;
+        aktuelle_runde++;
+
+        $(".wuerfel_btn").prop("disabled", false);
+        $(".wuerfel_btn").css({"cursor": "pointer"});
+        
+        $(this).prop("disabled", true);
+        $(this).css({"cursor": "not-allowed"});
+    });
+
+    $(".wuerfel_btn").click(function() {
+        wuerfel_auswahl = ($(this).attr("id")).replace("wuerfel_btn_", "");
+        ergebnisse.push(wuerfel_auswahl);
+
+        // Die Würfel wieder sperren
+        $(".wuerfel_btn").prop("disabled", true);
+        $(".wuerfel_btn").css({"cursor": "not-allowed"});
+
+        // Neues Guthaben berechnen
+        var erwarteter_wert = werte[aktuelle_runde-2];
+        
+        // Wenn richtig oder falsch jeweils animieren
+        if (wuerfel_auswahl.length == 4) {
+            if (wuerfel_auswahl.indexOf(erwarteter_wert) > -1) { guthaben += 100; popup_inhalt = 100; }
+            else { guthaben -= 100; popup_inhalt = -100; }
+        } else if (wuerfel_auswahl.length == 3) {
+            if (wuerfel_auswahl.indexOf(erwarteter_wert) > -1) { guthaben += 200; popup_inhalt = 200; }
+            else { guthaben -= 200; popup_inhalt = -200; }
+        } else if (wuerfel_auswahl.length == 2) {
+            if (wuerfel_auswahl.indexOf(erwarteter_wert) > -1) { guthaben += 500; popup_inhalt = 500; }
+            else { guthaben -= 500; popup_inhalt = -500; }
+        } else if (wuerfel_auswahl.length == 1) {
+            if (wuerfel_auswahl.indexOf(erwarteter_wert) > -1) { guthaben += 1000; popup_inhalt = 1000; }
+            else { guthaben -= 1000; popup_inhalt = -1000; }
+        } else {
+            // Irgendwie besser lösen
+            alert("Fehler mit Auswertung Würfel!");
+        }
+
+        /*
+            Animation zeigen die 3 Sekunden lang würfelt ODER
+            Popup zeigen, das man selbst wegdrücken muss UND "Hurra"/ "Buh" Sound abspielen?
+        */
+        var style_h2;
+
+        if (popup_inhalt < 0) { style_h2 = "color: red"; }
+        else { style_h2 = "color: green"; }
+
+        $.fancybox.open("                                                   \
+            <div style='border-radius: 25px'>                               \
+                <h1 style='" + style_h2 + "'>" + popup_inhalt + "</h1>      \
+            </div>                                                          \
+        ");
+
+        /* Ergebnis zeigen/ Alle Infos neusetzen (Canvas, Gewinn/ Verlust) */
+        if (guthaben >= 0) {
+            document.getElementById("lbl_verlust").innerHTML = "- " + "0" + " €";
+            document.getElementById("lbl_gewinn").innerHTML = "+ " + guthaben + " €";
+        } else {
+            document.getElementById("lbl_verlust").innerHTML = guthaben + " €";
+            document.getElementById("lbl_gewinn").innerHTML = "+ " + "0" + " €";
+        }
+
+        /* Start/Weiter-Button aktivieren */
+        $("#btn_start_weiter").prop("disabled", false);
+        $("#btn_start_weiter").css({"cursor": "pointer"});
+    });
+})

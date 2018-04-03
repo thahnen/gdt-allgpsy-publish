@@ -1,12 +1,37 @@
-/* ====================================================================
-     * Copyright (C) 2017-2018 Hahnen Industries - All Rights Reserved
-     * 
-     * This file is part of GDT.
-     * Unauthorized copying of this file or the software, via any medium
-     * is strictly prohibited and can not be distributed without the express
-     * permission of Hahnen Industries representated by Tobias Hahnen
-     *
-     * Written by Tobias Hahnen <tobias.hahnen@stud.hn.de>, March 2018
-    ===================================================================== */
+@charset "UTF-8";
 
-@charset "UTF-8";[class~=div--logo]{border-left-width:thin;}[class~=btn--steuerung]:hover{background-color:#646464;}[class~=div--logo]{border-bottom-width:thin;}[class~=div--logo]{border-right-width:thin;}[class~=div--logo]{border-top-width:thin;}[class~=div--logo]{border-left-style:solid;}[class~=div--logo]{border-bottom-style:solid;}[class~=div--logo]{border-right-style:solid;}[class~=btn--steuerung]:hover{color:white;}[class~=div--logo]{border-top-style:solid;}[class~=div--logo]{border-left-color:darkgray;}input[type=submit],input,button,input[type=button]{cursor:pointer;}[class~=div--logo]{border-bottom-color:darkgray;}[class~=div--logo]{border-right-color:darkgray;}[class~=div--logo]{border-top-color:darkgray;}[class~=btn--steuerung]:hover{box-shadow:0 9pt 16px 0 rgba(0,0,0,.24),0 1.0625pc 37.5pt 0 rgba(0,0,0,.19);}[class~=div--logo]{border-image:none;}[class~=div--logo]{background-color:#dfe4f2;}[class~=img--logo]{width:99%;}[class~=div--wrapper]{margin-top:1vh;}[class~=div--wrapper]{border-left-width:thin;}[class~=div--wrapper]{border-bottom-width:thin;}[class~=div--wrapper]{border-right-width:thin;}[class~=div--wrapper]{border-top-width:thin;}[class~=div--wrapper]{border-left-style:solid;}[class~=div--wrapper]{border-bottom-style:solid;}[class~=div--wrapper]{border-right-style:solid;}[class~=div--wrapper]{border-top-style:solid;}[class~=div--wrapper]{border-left-color:darkgray;}[class~=div--wrapper]{border-bottom-color:darkgray;}[class~=div--wrapper]{border-right-color:darkgray;}[class~=div--wrapper]{border-top-color:darkgray;}[class~=div--wrapper]{border-image:none;}[class~=div--wrapper]{background-color:lightgray;}[class~=btn--steuerung]{border-left-width:thin;}[class~=btn--steuerung]{border-bottom-width:thin;}[class~=btn--steuerung]{border-right-width:thin;}[class~=btn--steuerung]{border-top-width:thin;}[class~=btn--steuerung]{border-left-style:solid;}[class~=btn--steuerung]{border-bottom-style:solid;}[class~=btn--steuerung]{border-right-style:solid;}[class~=btn--steuerung]{border-top-style:solid;}[class~=btn--steuerung]{border-left-color:black;}[class~=btn--steuerung]{border-bottom-color:black;}[class~=btn--steuerung]{border-right-color:black;}[class~=btn--steuerung]{border-top-color:black;}[class~=btn--steuerung]{border-image:none;}[class~=btn--steuerung]{border-radius:5%;}[class~=btn--steuerung]{background-color:white;}[class~=btn--steuerung]{color:black;}[class~=btn--steuerung]{font-size:larger;}[class~=btn--steuerung]{-webkit-transition-duration:.3s;}[class~=btn--steuerung]{transition-duration:.3s;}
+/* Das "Allgemeine Psychologie: Kognition" - Logo: */
+.div--logo {
+    border: thin solid darkgray;
+    background-color: #dfe4f2;
+}
+
+.img--logo {
+    margin: calc(1vw / 2) calc(1vw / 2) calc(1vw / 3) calc(1vw / 2);
+    width: 99%;
+}
+
+.div--wrapper {
+    margin-top: 1vh;
+    border: thin solid darkgray;
+    background-color: lightgray;
+}
+
+/* Standard-Button-Verhalten: */
+button, input, input[type=button], input[type=submit] { cursor: pointer; }
+
+.btn--steuerung {
+    border: thin solid black;
+    border-radius: 5%;
+    background-color: white;
+    color: black;
+    font-size: larger;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+}
+
+.btn--steuerung:hover {
+    background-color: rgb(100, 100, 100);
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

@@ -1,12 +1,29 @@
-/* ====================================================================
-     * Copyright (C) 2017-2018 Hahnen Industries - All Rights Reserved
-     * 
-     * This file is part of GDT.
-     * Unauthorized copying of this file or the software, via any medium
-     * is strictly prohibited and can not be distributed without the express
-     * permission of Hahnen Industries representated by Tobias Hahnen
-     *
-     * Written by Tobias Hahnen <tobias.hahnen@stud.hn.de>, March 2018
-    ===================================================================== */
+@import url("standard.css");
 
-@import url("standard.css");p{margin-left:calc(1vw);}a,#btn_abbrechen{cursor:alias;}p{font-size:larger;}[class~=btn--imp],.btn--nav{margin-top:1vw;}.btn--nav{margin-left:1vw;}*{cursor:default;}p{font-weight:bold;}.btn--nav{margin-bottom:1vw;}[class~=btn--imp]{float:right;}pre{font-family:"Roboto",sans-serif;}pre{font-size:large;}[class~=btn--imp]{margin-right:1vw;}pre{line-height:1.5;}
+* { cursor: default; }
+
+p {
+    margin-left: calc(1vw);
+    font-size: larger;
+    font-weight: bold;
+}
+
+pre {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    line-height: 1.5;
+}
+
+.btn--nav {
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+}
+
+.btn--imp {
+    float: right;
+    margin-right: 1vw;
+    margin-top: 1vw;
+}
+
+a, #btn_abbrechen { cursor: alias; }
