@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <!-- ====================================================================
+         * Copyright (C) 2017-2018 Hahnen Industries - All Rights Reserved
+         *
+         * This file is part of GDT.
+         * Unauthorized copying of this file or the software, via any medium
+         * is strictly prohibited and can not be distributed without the express
+         * permission of Hahnen Industries representated by Tobias Hahnen
+         *
+         * Written by Tobias Hahnen <tobias.hahnen@stud.hn.de>, March 2018
+        ===================================================================== -->
+
     <meta charset="utf-8" />
+
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="description" content="GDT Standard-Webversion, diese Seite sollte niemals ohne vorherige Webseiten aufgerufen werden!" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="expires" content="0" />
+    <meta name="author" content="Tobias Hahnen" />
+
     <title>GDT Standard Version</title>
 
-    <meta name="author" content="Tobias Hahnen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="format-detection" content="telephone=no">
-
-    <link rel="icon" href="https://www.uni-due.de/favicon.ico">
-    <link rel="apple-touch-icon" href="https://www.uni-due.de/imperia/md/images/cms/h/apple-touch-icon.png">
-    <link rel="stylesheet" type="text/css" href="css/libraries/jquery.fancybox.min.css">
+    <link rel="icon" href="https://www.uni-due.de/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://www.uni-due.de/imperia/md/images/cms/h/apple-touch-icon.png" />
     <link rel="stylesheet" type="text/css" href="css/gdt_std.css" />
 
     <script src="js/libraries/jquery-3.2.1.min.js"></script>
-    <script src="js/libraries/jquery.fancybox.min.js"></script>
 </head>
 <body>
 
 <?php
+// Es wird nichts ausgegeben, nicht einmal Warnungen!
 error_reporting(0);
 
 $name_vpnum = "-1";
@@ -100,55 +115,58 @@ ende:;
                         <!-- 1.Reihe: [1], [2], [3], [4], [5], [6] -->
                         <br>
                         <button type="submit" class="wuerfel_btn" id="wuerfel_btn_1">
-                            <img src="media/wuerfel_1.png" class="wuerfel_reihe_1" alt="Bild nicht gefunden">
+                            <img src="media/wuerfel_1.png" class="wuerfel_reihe_1" alt="Bild nicht gefunden" />
                         </button>
                         <button type="submit" class="wuerfel_btn" id="wuerfel_btn_2">
-                            <img src="media/wuerfel_2.png" class="wuerfel_reihe_1" alt="Bild nicht gefunden">
+                            <img src="media/wuerfel_2.png" class="wuerfel_reihe_1" alt="Bild nicht gefunden" />
                         </button>
                         <button type="submit" class="wuerfel_btn" id="wuerfel_btn_3">
-                            <img src="media/wuerfel_3.png" class="wuerfel_reihe_1" alt="Bild nicht gefunden">
+                            <img src="media/wuerfel_3.png" class="wuerfel_reihe_1" alt="Bild nicht gefunden" />
                         </button>
                         <button type="submit" class="wuerfel_btn" id="wuerfel_btn_4">
-                            <img src="media/wuerfel_4.png" class="wuerfel_reihe_1" alt="Bild nicht gefunden">
+                            <img src="media/wuerfel_4.png" class="wuerfel_reihe_1" alt="Bild nicht gefunden" />
                         </button>
                         <button type="submit" class="wuerfel_btn" id="wuerfel_btn_5">
-                            <img src="media/wuerfel_5.png" class="wuerfel_reihe_1" alt="Bild nicht gefunden">
+                            <img src="media/wuerfel_5.png" class="wuerfel_reihe_1" alt="Bild nicht gefunden" />
                         </button>
                         <button type="submit" class="wuerfel_btn" id="wuerfel_btn_6">
-                            <img src="media/wuerfel_6.png" class="wuerfel_reihe_1" alt="Bild nicht gefunden">
+                            <img src="media/wuerfel_6.png" class="wuerfel_reihe_1" alt="Bild nicht gefunden" />
                         </button>
-                        <a class="lbl--gewinnsumme">1000€</a><br><br><br>
-                        
+                        <a class="lbl--gewinnsumme">1000€</a>
+                        <br><br><br>
+
                         <!-- 2.Reihe: [1|2], [3|4], [5|6] -->
                         <button type="submit" class="wuerfel_btn" id="wuerfel_btn_12">
-                            <img src="media/wuerfel_12.png" class="wuerfel_reihe_2" alt="Bild nicht gefunden">
+                            <img src="media/wuerfel_12.png" class="wuerfel_reihe_2" alt="Bild nicht gefunden" />
                         </button>
                         <button type="submit" class="wuerfel_btn" id="wuerfel_btn_34">
-                            <img src="media/wuerfel_34.png" class="wuerfel_reihe_2" alt="Bild nicht gefunden">
+                            <img src="media/wuerfel_34.png" class="wuerfel_reihe_2" alt="Bild nicht gefunden" />
                         </button>
                         <button type="submit" class="wuerfel_btn" id="wuerfel_btn_56">
-                            <img src="media/wuerfel_56.png" class="wuerfel_reihe_2" alt="Bild nicht gefunden">
+                            <img src="media/wuerfel_56.png" class="wuerfel_reihe_2" alt="Bild nicht gefunden" />
                         </button>
-                        <a class="lbl--gewinnsumme">500€</a><br><br><br>
+                        <a class="lbl--gewinnsumme">500€</a>
+                        <br><br><br>
 
                         <!-- 3.Reihe: [1|2|3], [4|5|6] -->
                         <button type="submit" class="wuerfel_btn" id="wuerfel_btn_123">
-                            <img src="media/wuerfel_123.png" class="wuerfel_reihe_3" alt="Bild nicht gefunden">
+                            <img src="media/wuerfel_123.png" class="wuerfel_reihe_3" alt="Bild nicht gefunden" />
                         </button>
                         <button type="submit" class="wuerfel_btn" id="wuerfel_btn_456">
-                            <img src="media/wuerfel_456.png" class="wuerfel_reihe_3" alt="Bild nicht gefunden">
+                            <img src="media/wuerfel_456.png" class="wuerfel_reihe_3" alt="Bild nicht gefunden" />
                         </button>
-                        <a class="lbl--gewinnsumme">200€</a><br><br><br>
+                        <a class="lbl--gewinnsumme">200€</a>
+                        <br><br><br>
 
                         <!-- 4. Reihe: [1|2|3|4], [2|3|4|5], [3|4|5|6] -->
                         <button type="submit" class="wuerfel_btn" id="wuerfel_btn_1234">
-                            <img src="media/wuerfel_1234.png" class="wuerfel_reihe_4" alt="Bild nicht gefunden">
+                            <img src="media/wuerfel_1234.png" class="wuerfel_reihe_4" alt="Bild nicht gefunden" />
                         </button>
                         <button type="submit" class="wuerfel_btn" id="wuerfel_btn_2345">
-                            <img src="media/wuerfel_2345.png" class="wuerfel_reihe_4" alt="Bild nicht gefunden">
+                            <img src="media/wuerfel_2345.png" class="wuerfel_reihe_4" alt="Bild nicht gefunden" />
                         </button>
                         <button type="submit" class="wuerfel_btn" id="wuerfel_btn_3456">
-                            <img src="media/wuerfel_3456.png" class="wuerfel_reihe_4" alt="Bild nicht gefunden">
+                            <img src="media/wuerfel_3456.png" class="wuerfel_reihe_4" alt="Bild nicht gefunden" />
                         </button>
                         <a class="lbl--gewinnsumme">100€</a>
                     </div>

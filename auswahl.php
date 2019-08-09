@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="de"> 
+<html lang="de">
 <head>
+    <!-- ====================================================================
+         * Copyright (C) 2017-2018 Hahnen Industries - All Rights Reserved
+         *
+         * This file is part of GDT.
+         * Unauthorized copying of this file or the software, via any medium
+         * is strictly prohibited and can not be distributed without the express
+         * permission of Hahnen Industries representated by Tobias Hahnen
+         *
+         * Written by Tobias Hahnen <tobias.hahnen@stud.hn.de>, March 2018
+        ===================================================================== -->
+
     <meta charset="utf-8" />
+
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="description" content="GDT Standard-Webversion, diese Seite sollte niemals ohne vorherige Webseiten aufgerufen werden!" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="expires" content="0" />
+    <meta name="author" content="Tobias Hahnen" />
+
     <title>GDT Versionsauswahl</title>
 
-    <meta name="author" content="Tobias Hahnen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="format-detection" content="telephone=no">
-    
-    <link rel="icon" href="https://www.uni-due.de/favicon.ico">
-    <link rel="apple-touch-icon" href="https://www.uni-due.de/imperia/md/images/cms/h/apple-touch-icon.png">
+    <link rel="icon" href="https://www.uni-due.de/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://www.uni-due.de/imperia/md/images/cms/h/apple-touch-icon.png" />
     <link rel="stylesheet" type="text/css" href="css/auswahl.css" />
 
     <script src="js/libraries/jquery-3.2.1.min.js"></script>
@@ -17,6 +33,18 @@
 <body>
 
 <?php
+/*
+    Überprüfung der Parameter die mitgenommen wurden!
+    Wenn falsch, dann
+    => Auf Fehlerseite weiterleiten
+    => Es MUSS gewährleistet sein, dass bei normalen Einträgen kein Fehler ist!
+*/
+
+// Für alles generelle eine PHP-Datei importieren (die die Überprüfung ausführt)
+
+// Es wird nichts ausgegeben, nicht einmal Warnungen!
+error_reporting(0);
+
 $name_vpnum = "-1";
 $alter = -1;
 $schuljahre = -1;
@@ -61,7 +89,7 @@ ende:;
 ?>
 
     <div class="div--logo">
-        <img class="img--logo" src="/media/AllgPsy_de_4c_einzeilig_2015.png" alt="Das Logo konnte nicht gefunden werden!">
+        <img class="img--logo" src="/media/AllgPsy_de_4c_einzeilig_2015.png" alt="Das Logo konnte nicht gefunden werden!" />
     </div>
 
     <div class="div--wrapper">
@@ -72,36 +100,38 @@ ende:;
         <form action="" autocomplete="off">
             <div class="form--div--gdtwahl--top">
                 <label class="lbl--form--input">GDT (standard)</label>
-                <input type="radio" name="gdt_version" value="standard">
+                <input type="radio" name="gdt_version" value="standard" />
             </div>
+
             <div class="form--div--gdtwahl">
                 <label class="lbl--form--input">GDTmod</label>
-                <input type="radio" name="gdt_version" value="gdtmod">
+                <input type="radio" name="gdt_version" value="gdtmod" />
                 <span>Noch nicht implementiert!</span>
             </div>
 
             <!-- Danach auf nächster Seite weitere Auswahl -->
             <div class="form--div--gdtwahl">
                 <label class="lbl--form--input">GDTope</label>
-                <input type="radio" name="gdt_version" value="gdtope">
+                <input type="radio" name="gdt_version" value="gdtope" />
                 <span>Noch nicht implementiert!</span>
             </div>
 
             <div class="form--div--gdtwahl">
                 <label class="lbl--form--input">GDTsf</label>
-                <input type="radio" name="gdt_version" value="gdtsf">
+                <input type="radio" name="gdt_version" value="gdtsf" />
                 <span>Noch nicht implementiert!</span>
             </div>
 
             <!-- Danach auf nächster Seite weitere Auswahl -->
             <div class="form--div--gdtwahl">
                 <label class="lbl--form--input">GDTforce</label>
-                <input type="radio" name="gdt_version" value="gdtforce">
+                <input type="radio" name="gdt_version" value="gdtforce" />
                 <span>Noch nicht implementiert!</span>
-            </div><br>
+            </div>
+            <br>
 
-            <input type="button" class="btn--steuerung btn--nav" id="btn_submit" value="Weiter">
-            <input type="button" class="btn--steuerung btn--nav" id="btn_abbrechen" value="Abbrechen">
+            <input type="button" class="btn--steuerung btn--nav" id="btn_submit" value="Weiter" />
+            <input type="button" class="btn--steuerung btn--nav" id="btn_abbrechen" value="Abbrechen" />
         </form>
     </div>
 
@@ -111,6 +141,5 @@ ende:;
         var schuljahre = '<?php echo $schuljahre;?>';
         var geschlecht = '<?php echo $geschlecht;?>';
     </script>
-    
     <script src="js/auswahl.js"></script>
 </body>

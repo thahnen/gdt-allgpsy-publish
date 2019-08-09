@@ -9,10 +9,39 @@
      * Written by Tobias Hahnen <tobias.hahnen@stud.hn.de>, March 2018
     ===================================================================== */
 
-'use strict';
+@import url("standard.css");
 
-$(function() {
-    $("#btn_submit").click(function() {
-        window.location = "../index.php";
-    });
-});
+body {
+    cursor: default;
+    background-color: lightgray;
+}
+
+h4 { text-shadow: 0 calc(1px * 0.5) darkgray; }
+
+h2, h4 {
+    text-align: center;
+    color: #616161;
+}
+
+h2 {
+    text-shadow: 0 1px darkgray;
+    font-family: cursive;
+}
+
+.div--wrapper {
+    position: fixed;
+    top: 28vh;
+    left: 30vw;
+    width: 50vw;
+    margin-top: -5vh;
+    margin-left: -5vw;
+    border: none;
+}
+
+.txt--404 {
+    text-align: center;
+    text-shadow: 0 2px darkgray;
+    font-size: 10vh;
+    font-weight: bold;
+    color: #616161;
+}

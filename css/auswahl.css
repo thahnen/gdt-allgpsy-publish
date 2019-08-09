@@ -1,7 +1,20 @@
+/* ====================================================================
+     * Copyright (C) 2017-2018 Hahnen Industries - All Rights Reserved
+     *
+     * This file is part of GDT.
+     * Unauthorized copying of this file or the software, via any medium
+     * is strictly prohibited and can not be distributed without the express
+     * permission of Hahnen Industries representated by Tobias Hahnen
+     *
+     * Written by Tobias Hahnen <tobias.hahnen@stud.hn.de>, March 2018
+    ===================================================================== */
+
 @import url("standard.css");
 
 /* Das gilt auf der ganzen Seite */
-* { cursor: default; }
+* {
+    cursor: default;
+}
 
 span {
     opacity: 0.0;
@@ -50,4 +63,6 @@ input:checked+span, input:hover+span {
     margin-bottom: 1vw;
 }
 
-#btn_abbrechen { cursor: alias; }
+#btn_abbrechen {
+    cursor: alias;
+}

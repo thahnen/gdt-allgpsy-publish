@@ -1,4 +1,19 @@
+/* ====================================================================
+     * Copyright (C) 2017-2018 Hahnen Industries - All Rights Reserved
+     *
+     * This file is part of GDT.
+     * Unauthorized copying of this file or the software, via any medium
+     * is strictly prohibited and can not be distributed without the express
+     * permission of Hahnen Industries representated by Tobias Hahnen
+     *
+     * Written by Tobias Hahnen <tobias.hahnen@stud.hn.de>, March 2018
+    ===================================================================== */
+
 @import url("standard.css");
+
+/* ================================
+    Genrelles Aussehen der Website
+   ================================ */
 
 body {
     height: 100vh;
@@ -17,6 +32,10 @@ body {
     background-color: rgb(223, 228, 242);
 }
 
+
+/* ====================
+    1. Reihe mit Items
+   ==================== */
 .div--reihe1 {
     height: 40vh;
     display: flex;
@@ -79,8 +98,13 @@ body {
     text-align: center;
 }
 
-#lbl_verlust { color: darkred; }
-#lbl_gewinn { color: green; }
+#lbl_verlust {
+    color: darkred;
+}
+
+#lbl_gewinn {
+    color: green;
+}
 /* #endregion */
 
 /* #region ii) Diagramm */
@@ -105,6 +129,10 @@ body {
 }
 /* #endregion */
 
+
+/* ====================
+    2. Reihe mit Items
+   ==================== */
 .div--reihe2 {
     height: 58vh;
     display: flex;
@@ -130,9 +158,13 @@ body {
     font-size: calc(2vw * 0.7);
 }
 
-#lbl_wuerfel_werte { width: 30%; }
+#lbl_wuerfel_werte {
+    width: 30%;
+}
 
-#lbl_wuerfel_auswahl { width: 70%; }
+#lbl_wuerfel_auswahl {
+    width: 70%;
+}
 
 #div_wuerfel_wrapper {
     margin-bottom: 10px;
@@ -166,13 +198,21 @@ body {
     background-color: white;
 }
 
-.wuerfel_reihe_1 { width: calc(2vw * 0.85); }
+.wuerfel_reihe_1 {
+    width: calc(2vw * 0.85);
+}
 
-.wuerfel_reihe_2 { width: calc(2vw * 0.85 * 2); }
+.wuerfel_reihe_2 {
+    width: calc(2vw * 0.85 * 2);
+}
 
-.wuerfel_reihe_3 { width: calc(2vw * 0.85 * 3); }
+.wuerfel_reihe_3 {
+    width: calc(2vw * 0.85 * 3);
+}
 
-.wuerfel_reihe_4 { width: calc(2vw * 0.85 * 4); }
+.wuerfel_reihe_4 {
+    width: calc(2vw * 0.85 * 4);
+}
 
 .lbl--gewinnsumme {
     float: right;
@@ -181,6 +221,7 @@ body {
     margin-right: 5%;
     font-size: calc(2vw * 0.85);
 }
+
 /* #endregion */
 
 /* #region 2.Element: Probandendaten & Navigationsknöpfe [GENERELL] */

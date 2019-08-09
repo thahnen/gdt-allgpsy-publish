@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <!-- ====================================================================
+         * Copyright (C) 2017-2018 Hahnen Industries - All Rights Reserved
+         *
+         * This file is part of GDT.
+         * Unauthorized copying of this file or the software, via any medium
+         * is strictly prohibited and can not be distributed without the express
+         * permission of Hahnen Industries representated by Tobias Hahnen
+         *
+         * Written by Tobias Hahnen <tobias.hahnen@stud.hn.de>, March 2018
+        ===================================================================== -->
+
     <meta charset="utf-8" />
+
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="description" content="GDT Standard-Webversion, diese Seite sollte niemals ohne vorherige Webseiten aufgerufen werden!" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="expires" content="0" />
+    <meta name="author" content="Tobias Hahnen" />
+
     <title>GDT Ende</title>
 
-    <meta name="author" content="Tobias Hahnen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="format-detection" content="telephone=no">
-    
     <link rel="icon" href="https://www.uni-due.de/favicon.ico">
     <link rel="apple-touch-icon" href="https://www.uni-due.de/imperia/md/images/cms/h/apple-touch-icon.png">
     <link rel="stylesheet" type="text/css" href="css/index.css" />
@@ -17,7 +33,8 @@
 </head>
 <body>
 <?php
-error_reporting(E_ERROR | E_WARNING); // später durch 0 ersetzen!
+// Es wird nichts ausgegeben, nicht einmal Warnungen!
+error_reporting(0);
 
 $parameter = [];
 $err = "Error";
@@ -112,7 +129,7 @@ if ($parameter[0] == "standard") {
     // Dateinamen erstellen und überprüfen
     $path = "./ergebnisse/";
     $filename = md5($parameter[0] . $parameter[1][0] . $parameter[5]);
-    
+
     if ($handle = opendir($path)) {
         while (false !== ($entry = readdir($handle))) {
             if ($entry != "." && $entry != "..") {
@@ -149,7 +166,7 @@ if ($parameter[0] == "standard") {
     }
 
     $txt = $txt . "\nKontostand: " . $parameter[5];
-    
+
     fwrite($file, $txt);
     fclose($file);
 
@@ -166,12 +183,12 @@ goto ende;
 fehler: header("Location: /fehler.php");
 ende:;
 ?>
-    
+
     <div class="div--logo">
-        <img class="img--logo" src="/media/AllgPsy_de_4c_einzeilig_2015.png" alt="Das Logo konnte nicht gefunden werden!">
+        <img class="img--logo" src="/media/AllgPsy_de_4c_einzeilig_2015.png" alt="Das Logo konnte nicht gefunden werden!" />
     </div>
 
-    <a href="https://github.com/thahnen/gdt-allgpsy-publish" class="github-corner" aria-label="View source on Github">
+    <a href="https://github.com/thahnen" class="github-corner" aria-label="View source on Github">
         <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
             <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
             <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>

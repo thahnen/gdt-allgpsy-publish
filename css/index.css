@@ -1,6 +1,19 @@
+/* ====================================================================
+     * Copyright (C) 2017-2018 Hahnen Industries - All Rights Reserved
+     *
+     * This file is part of GDT.
+     * Unauthorized copying of this file or the software, via any medium
+     * is strictly prohibited and can not be distributed without the express
+     * permission of Hahnen Industries representated by Tobias Hahnen
+     *
+     * Written by Tobias Hahnen <tobias.hahnen@stud.hn.de>, March 2018
+    ===================================================================== */
+
 @import url("standard.css");
 
-* { cursor: default; }
+* {
+    cursor: default;
+}
 
 p {
     margin-left: calc(1vw);
@@ -26,4 +39,6 @@ pre {
     margin-top: 1vw;
 }
 
-a, #btn_abbrechen { cursor: alias; }
+a, #btn_abbrechen {
+    cursor: alias;
+}
